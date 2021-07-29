@@ -34,6 +34,7 @@ header {
   left: 0;
   align-items: center;
   padding: 40px 0;
+  z-index: 2;
 }
 
 header.show {
@@ -116,14 +117,15 @@ header.show .logo-wrapper .logo-full {
   margin-bottom: 40px;
 }
 
-.main-hero .hero-content .btn {
+.main-hero .btn {
   background-color: #2eaf7d;
   display: flex;
   padding: 20px 40px;
   width: fit-content;
+  color: #ffffff;
 }
 
-.main-hero .hero-content .btn-arrow {
+.main-hero .btn .btn-arrow {
   margin-left: 10px;
 }
 
@@ -444,6 +446,11 @@ footer .copyright {
 
 .projects .filters span {
   margin-right: 30px;
+  cursor: pointer;
+}
+
+.projects .filters span.active {
+  text-decoration: underline;
 }
 
 .projects .filters .by {
@@ -474,8 +481,109 @@ footer .copyright {
 
 .projects .content .info h4 {
   font-size: 2.8rem;
+  position: relative;
+  left: 5px;
+  margin-bottom: 5px;
 }
 
 .projects .content .info p {
   font-size: 2rem;
+}
+
+.main-hero.project {
+  justify-content: flex-start;
+  position: relative;
+}
+
+.main-hero.project .hero-content {
+  padding-left: 10%;
+  align-items: flex-start;
+}
+
+.main-hero.project .hero-content h1 {
+  margin-bottom: 10px;
+}
+
+.main-hero.project .hero-content p {
+  font-size: 2rem;
+}
+
+.main-hero.project .btn {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+
+.project-info {
+  display: flex;
+  padding: 60px 0;
+}
+
+.project-info .main-part {
+  width: 60%;
+  padding: 20px 80px;
+}
+
+.project-info .main-part .title {
+  margin-bottom: 40px;
+}
+
+.project-info .main-part .title h3 {
+  font-size: 3.7rem;
+  margin-bottom: 5px;
+  position: relative;
+  left: 5px;
+}
+
+.project-info .main-part .title p {
+  font-size: 2rem;
+}
+
+.project-info .main-part .description p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  line-height: 41px;
+}
+
+.project-info .author {
+  border-left: 1px solid #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 8%;
+}
+
+.project-info .author span {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  margin-bottom: 40px;
+}
+
+.gallery img:last-child {
+  margin-bottom: 0;
+}
+
+.gallery .full {
+  width: 100%;
+}
+
+.gallery .half {
+  width: 50%;
+}
+
+.gallery .half:nth-child(odd) {
+  padding-left: 20px;
+}
+
+.gallery .half:nth-child(even) {
+  padding-right: 20px;
 }
