@@ -112,9 +112,10 @@ header.show .logo-wrapper .logo-full {
 }
 
 .main-hero .hero-content h1 {
-  font-size: 60px;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .main-hero .btn {
@@ -169,6 +170,10 @@ header.show .logo-wrapper .logo-full {
   width: 50%;
 }
 
+.article .img-preview img {
+  width: 100%;
+}
+
 .article .description {
   padding: 80px;
 }
@@ -211,6 +216,7 @@ header.show .logo-wrapper .logo-full {
 
 .article-fullw .content p {
   font-size: 1.7rem;
+  line-height: 28px;
 }
 
 .button {
@@ -411,10 +417,12 @@ footer .copyright {
 .hero-2 .description-2 .text p {
   width: 50%;
   padding-right: 120px;
+  line-height: 30px;
 }
 
 .hero-2 .description-2 {
   padding: 80px 80px 120px;
+  background-color: #fff;
 }
 
 .article-fullw.green {
@@ -488,6 +496,10 @@ footer .copyright {
 
 .projects .content .info p {
   font-size: 2rem;
+}
+
+.projects .content .project img {
+  width: 100%;
 }
 
 .main-hero.project {
@@ -586,4 +598,316 @@ footer .copyright {
 
 .gallery .half:nth-child(even) {
   padding-right: 20px;
+}
+
+.map-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  width: 100%;
+  height: 550px;
+}
+
+.map-wrapper .description {
+  display: flex;
+  padding: 77px 84px;
+  background-color: #f6f6f6;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  line-height: 36px;
+}
+
+.map-wrapper .description .name {
+  border-right: 1px solid #cfcfcf;
+  padding-right: 100px;
+}
+
+.map-wrapper .description .company-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map-wrapper .description .company-info div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 110px;
+}
+
+/* .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.contact-section {
+  padding: 40px 70px 100px 84px;
+}
+
+.contact-section .info {
+  margin-bottom: 110px;
+  font-size: 1.6rem;
+}
+
+.contact-section .info p {
+  margin-bottom: 45px;
+  max-width: 60%;
+  line-height: 36px;
+}
+
+.contact-section .form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.contact-section .form .firstpart {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .form .firstpart .radios {
+  display: flex;
+  padding: 46px 0;
+}
+
+.contact-section .form .firstpart .radios div {
+  margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+.contact-section .form .firstpart .radios div label {
+  margin-left: 10px;
+}
+
+.contact-section .form .secondpart {
+  width: 45%;
+}
+
+.contact-section .form input[type="text"],
+.contact-section .form input[type="email"],
+.contact-section .form textarea {
+  border: 1px solid #666666;
+}
+
+.contact-section .form input[type="text"],
+.contact-section .form input[type="email"] {
+  width: 45%;
+  height: 80px;
+  padding: 0 30px;
+  margin-right: 30px;
+}
+
+.contact-section .form textarea {
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-section .form form .btn {
+  background-color: #0e353c;
+  display: flex;
+  padding: 20px 40px;
+  width: fit-content;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contact-section .form form .btn .txt {
+  margin-right: 20px;
+}
+
+@media (max-width: 1680px) {
+  .container {
+    width: 100%;
+  }
+
+  .menu-desktop,
+  .side-info {
+    display: none;
+  }
+
+  html {
+    font-size: 85%;
+  }
+
+  .article .description {
+    padding: 60px;
+  }
+
+  .projects {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1680px) {
+  html {
+    font-size: 75%;
+  }
+
+  .article .description {
+    padding: 60px;
+  }
+
+  .main-hero .btn .btn-arrow img {
+    height: 7px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slogan {
+    height: 255px;
+    background-position: right -230px center;
+  }
+
+  .projects .content .project:nth-child(odd) {
+    padding-right: 10px;
+  }
+
+  .projects .content .project:nth-child(even) {
+    padding-left: 10px;
+}
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 65%;
+  }
+
+  .article .description {
+    padding: 33px;
+  }
+
+  .article .description img {
+    height: 50px;
+    left: 26px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer div {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .hero-2 .description-2 .text p {
+    padding-right: 60px;
+  }
+
+  .projects .filters {
+    padding: 58px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    flex-direction: column;
+  }
+
+  .article.right-img {
+    flex-direction: column-reverse;
+  }
+
+  .article .description,
+  .article .img-preview {
+    width: 100%;
+  }
+
+  .main-hero .hero-content {
+    padding: 0 15px;
+  }
+
+  .article-fullw {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .article-fullw .content {
+    width: 100%;
+  }
+
+  .article-fullw .content p {
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    padding: 50px 30px;
+    background-size: 20%;
+  }
+
+  .quote .content {
+    width: 100%;
+  }
+
+  .slogan {
+    background-position: right -420px center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slogan span {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  footer div {
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  .hero-2 .description {
+    padding: 85px 30px 80px;
+  }
+
+  .hero-2 .description-2 {
+    padding: 40px 30px 20px;
+  }
+
+  .hero-2 .description .text {
+    width: 100%;
+  }
+
+  .hero-2 .description-2 .text {
+    flex-direction: column;
+  }
+
+  .hero-2 .description-2 .text p {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .projects .content {
+    flex-direction: column;
+  }
+
+  .projects .content .project {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .projects .filters {
+    flex-direction: column;
+  }
+
+  .projects .filters span {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 60%;
+  }
+  .article .description {
+    padding: 20px;
+  }
 }
