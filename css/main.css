@@ -128,7 +128,7 @@ body {
   background-color: #2eaf7d;
   display: flex;
   padding: 20px 40px;
-  width: fit-content;
+  /* width: fit-content; */
   color: #ffffff;
 }
 
@@ -223,6 +223,11 @@ body {
 .article-fullw .content p {
   font-size: 1.7rem;
   line-height: 28px;
+}
+
+.arturl {
+  width: 100%;
+  display: inline-block;
 }
 
 .button {
@@ -495,8 +500,6 @@ footer .copyright {
 
 .projects .content .info h4 {
   font-size: 2.8rem;
-  position: relative;
-  left: 5px;
   margin-bottom: 5px;
 }
 
@@ -520,6 +523,7 @@ footer .copyright {
 
 .main-hero.project .hero-content h1 {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .main-hero.project .hero-content p {
@@ -549,8 +553,6 @@ footer .copyright {
 .project-info .main-part .title h3 {
   font-size: 3.7rem;
   margin-bottom: 5px;
-  position: relative;
-  left: 5px;
 }
 
 .project-info .main-part .title p {
@@ -584,6 +586,7 @@ footer .copyright {
 
 .gallery img {
   margin-bottom: 40px;
+  height: auto;
 }
 
 .gallery img:last-child {
@@ -822,7 +825,7 @@ nav#main-nav .bg-transparent {
 nav#main-nav .nav-wrapper {
   display: flex;
   flex-direction: column;
-  font-size: 5rem;
+  font-size: 4rem;
   align-items: center;
   position: absolute;
 }
@@ -834,7 +837,7 @@ nav#main-nav .nav-wrapper a {
 }
 
 nav#main-nav .nav-wrapper a:hover {
-  color: #2e93d2;
+  color: #212930;
   text-decoration: underline;
 }
 
@@ -1067,6 +1070,10 @@ nav#main-nav .nav-wrapper a:hover {
     flex-direction: column;
   }
 
+  .projects .content .info {
+    padding: 46px 40px;
+  }
+
   .projects .filters span {
     margin-bottom: 10px;
   }
@@ -1122,6 +1129,20 @@ nav#main-nav .nav-wrapper a:hover {
   header.for-mobile nav .hamburger.active span:nth-child(3) {
     top: -9px;
   }
+
+  .project-info {
+    flex-direction: column;
+  }
+
+  .project-info .main-part {
+    width: 100%;
+    padding: 3% 8%;
+  }
+
+  .project-info .author {
+    width: 100%;
+    padding: 3% 8%;
+  }
 }
 
 @media (max-width: 740px) {
@@ -1141,5 +1162,12 @@ nav#main-nav .nav-wrapper a:hover {
   }
   .article .description {
     padding: 20px;
+  }
+  .gallery {
+    padding: 10px;
+  }
+  .gallery img.half {
+    width: 100%;
+    padding: 0 !important;
   }
 }
