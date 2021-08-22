@@ -447,6 +447,7 @@ footer .copyright {
 
 .article-fullw.green .content h3 {
   font-size: 3.4rem;
+  line-height: 41px;
 }
 
 .article-fullw.green .content .button {
@@ -585,11 +586,15 @@ footer .copyright {
 }
 
 .gallery img {
-  margin-bottom: 40px;
   height: auto;
+  width: 100%;
 }
 
-.gallery img:last-child {
+.gallery a {
+  margin-bottom: 40px;
+}
+
+.gallery a:last-child {
   margin-bottom: 0;
 }
 
@@ -839,6 +844,11 @@ nav#main-nav .nav-wrapper a {
 nav#main-nav .nav-wrapper a:hover {
   color: #212930;
   text-decoration: underline;
+}
+
+div.bx-wrapper {
+  box-shadow: none;
+  border: none;
 }
 
 @media (max-width: 1680px) {
@@ -1169,5 +1179,17 @@ nav#main-nav .nav-wrapper a:hover {
   .gallery img.half {
     width: 100%;
     padding: 0 !important;
+  }
+  
+  .harmonic div {
+    flex: unset;
+  }
+  
+  .harmonic div.active {
+    flex-basis: unset;
+  }
+
+  .article-fullw.green {
+    background-image: none;
   }
 }

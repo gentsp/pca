@@ -6,16 +6,16 @@
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
-    <!-- <link href="./css/jquery.bxslider.css" rel="stylesheet" /> -->
+    <link href="./css/magnific-popup.css" rel="stylesheet" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./js/jquery.bxslider.js"></script> -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/main.js"></script>
   </head>
-  <body>
+  <body class="gallery-wrapper">
     <header class="for-mobile">
       <a href="./index.html">
         <img class="logo" src="./assets/images/logo.svg" />
@@ -55,7 +55,7 @@
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
-            <a href="#" class="social" target="_blank" style="margin-top:40px;">
+            <a href="#" class="social" target="_blank" style="margin-top: 40px">
               <img src="assets/images/fb.svg" />
             </a>
           </div>
@@ -66,15 +66,13 @@
       </header>
       <section
         class="main-hero project"
-        style="
-          background: no-repeat center center url('./vendor/oopp.jpg');
-        "
+        style="background: no-repeat center center url('./vendor/oopp.jpg')"
       >
         <div class="hero-content">
           <h1>Lorem Residence</h1>
           <p>New York, US</p>
         </div>
-        <a href="#" class="btn">
+        <a href="vendor/Image 24.png" class="btn image-link">
           <span class="txt">GALLERY</span>
           <span class="btn-arrow"
             ><img src="./assets/images/arrow-right.svg"
@@ -114,10 +112,18 @@
         </div>
       </section>
       <section class="gallery">
-          <img class="full" src="vendor/Image 24.png" />
-          <img class="half" src="vendor/02C.jpg" />
-          <img class="half" src="vendor/02C.jpg" />
-          <img class="full" src="vendor/Image 40.png" />
+        <a class="image-link full" href="vendor/Image 24.png">
+          <img src="vendor/Image 24.png" />
+        </a>
+        <a class="image-link half" href="vendor/02C.jpg">
+          <img src="vendor/02C.jpg" />
+        </a>
+        <a class="image-link half" href="vendor/02C.jpg">
+          <img src="vendor/02C.jpg" />
+        </a>
+        <a class="image-link full" href="vendor/Image 40.png">
+          <img src="vendor/Image 40.png" />
+        </a>
       </section>
       <footer>
         <div>
