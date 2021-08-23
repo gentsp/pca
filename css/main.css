@@ -169,6 +169,8 @@ body {
 
 .article {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .article .description,
@@ -182,6 +184,7 @@ body {
 
 .article .description {
   padding: 80px;
+  background: #fff;
 }
 
 .article .description .title {
@@ -209,6 +212,8 @@ body {
   align-items: flex-end;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 1;
 }
 
 .article-fullw .content {
@@ -278,6 +283,8 @@ body {
   display: flex;
   height: 520px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .harmonic div {
@@ -389,10 +396,16 @@ footer .copyright {
 .hero-2 {
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-2 .bg-wrapper {
   background-repeat: no-repeat;
   background-position: center top;
-  display: flex;
-  align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-2 h1 {
@@ -408,6 +421,8 @@ footer .copyright {
   width: 100%;
   padding: 85px 30px 120px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-2 .description .text {
@@ -434,6 +449,8 @@ footer .copyright {
 .hero-2 .description-2 {
   padding: 80px 80px 120px;
   background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .article-fullw.green {
@@ -1180,11 +1197,11 @@ div.bx-wrapper {
     width: 100%;
     padding: 0 !important;
   }
-  
+
   .harmonic div {
     flex: unset;
   }
-  
+
   .harmonic div.active {
     flex-basis: unset;
   }
