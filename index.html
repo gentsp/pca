@@ -13,7 +13,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/jquery.bxslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="./js/ScrollMagic.min.js"></script>
+    <script src="./js/animation.gsap.js"></script>
     <script src="./js/main.js"></script>
   </head>
   <body>
@@ -58,6 +60,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
           </div>
         </div>
@@ -65,12 +68,13 @@
           <img src="assets/images/fb.svg" />
         </a>
       </header>
-      <section
-        class="main-hero panel"
-        style="
-          background: no-repeat center center url('./vendor/Image\ 24.png');
-        "
-      >
+      <section class="main-hero panel">
+        <div
+          class="parallaxChildren"
+          style="
+            background: no-repeat center center url('./vendor/Image\ 24.png');
+          "
+        >
         <div class="hero-content">
           <h1>We put humanity into housing</h1>
           <a href="opened.html" class="btn">
@@ -80,10 +84,14 @@
             /></span>
           </a>
         </div>
+        </div>
+        
       </section>
       <div class="side-info">
         <h2>PCA Pacific Construction © 2021</h2>
-        <img src="assets/images/arrow-down.svg" />
+        <div class="scrollElem bottom">
+          <img src="assets/images/arrow-down.svg" />
+        </div>
       </div>
       <section class="article right-img">
         <div class="description">
@@ -189,7 +197,7 @@
         </div>
         <div>
           <span>604 416 3837</span>
-          <span>Facebook, Linkedin</span>
+          <span><a href="#">Facebook</a>, <a href="#">Linkedin</a></span>
         </div>
         <div class="copyright">
           <span>© 2021 PCA</span>

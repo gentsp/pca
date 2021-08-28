@@ -13,6 +13,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="./js/ScrollMagic.min.js"></script>
+    <script src="./js/animation.gsap.js"></script>
     <script src="./js/main.js"></script>
   </head>
   <body class="gallery-wrapper">
@@ -54,6 +57,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
             <a href="#" class="social" target="_blank" style="margin-top: 40px">
               <img src="assets/images/fb.svg" />
@@ -64,24 +68,30 @@
           <img src="assets/images/fb.svg" />
         </a>
       </header>
-      <section
-        class="main-hero project"
-        style="background: no-repeat center center url('./vendor/oopp.jpg')"
-      >
-        <div class="hero-content">
-          <h1>Lorem Residence</h1>
-          <p>New York, US</p>
+      <section class="main-hero project panel">
+        <div
+          class="parallaxChildren"
+          style="
+            background: no-repeat center center url('./vendor/oopp.jpg');
+          "
+        >
+          <div class="hero-content">
+            <h1>Lorem Residence</h1>
+            <p>New York, US</p>
+          </div>
+          <a href="vendor/Image 24.png" class="btn image-link">
+            <span class="txt">GALLERY</span>
+            <span class="btn-arrow"
+              ><img src="./assets/images/arrow-right.svg"
+            /></span>
+          </a>
         </div>
-        <a href="vendor/Image 24.png" class="btn image-link">
-          <span class="txt">GALLERY</span>
-          <span class="btn-arrow"
-            ><img src="./assets/images/arrow-right.svg"
-          /></span>
-        </a>
       </section>
       <div class="side-info">
         <h2>PCA Pacific Construction © 2021</h2>
-        <img src="assets/images/arrow-down.svg" />
+        <div class="scrollElem bottom">
+          <img src="assets/images/arrow-down.svg" />
+        </div>
       </div>
       <section class="project-info">
         <div class="main-part">
@@ -122,7 +132,7 @@
           <img src="vendor/02C.jpg" />
         </a>
         <a class="image-link full" href="vendor/Image 40.png">
-          <img src="vendor/Image 40.png" />
+          <img src="vendor/Image 40.png" style="height: 100%;" />
         </a>
       </section>
       <footer>
@@ -136,7 +146,7 @@
         </div>
         <div>
           <span>604 416 3837</span>
-          <span>Facebook, Linkedin</span>
+          <span><a href="#">Facebook</a>, <a href="#">Linkedin</a></span>
         </div>
         <div class="copyright">
           <span>© 2021 PCA</span>
