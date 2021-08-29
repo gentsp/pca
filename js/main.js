@@ -23,6 +23,17 @@ $(document).ready(function () {
       $(".harmonic div").removeClass("active");
       $(this).addClass("active");
     });
+
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: { triggerHook: "onEnter", duration: "200%" },
+    });
+  
+    new ScrollMagic.Scene({ triggerElement: "section.panel" })
+      .setTween("section.panel .parallaxChildren", {
+        y: "80%",
+        ease: Linear.easeNone,
+      })
+      .addTo(controller);
   }
 
   if ($(".gallery-wrapper").length)
@@ -53,19 +64,22 @@ $(document).ready(function () {
   //     .addTo(controller);
   // }
 
-  var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
-
-  new ScrollMagic.Scene({triggerElement: "section.panel"})
-					.setTween("section.panel .parallaxChildren", {y: "80%", ease: Linear.easeNone})
-					.addTo(controller);
-
-  $('.side-info .scrollElem').on('click', function() {
-    if($(this).hasClass('bottom')) {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    $(this).removeClass('bottom').addClass('top');
-  } else {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    $(this).removeClass('top').addClass('bottom');
-  }
+  $(".side-info .scrollElem").on("click", function () {
+    if ($(this).hasClass("bottom")) {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   });
+});
+
+$(window).scroll(function () {
+  if (
+    $(window).scrollTop() + $(window).height() >=
+    $(document).height() - 600
+  ) {
+    $(".side-info .scrollElem").removeClass("bottom").addClass("top");
+  } else {
+    $(".side-info .scrollElem").removeClass("top").addClass("bottom");
+  }
 });
